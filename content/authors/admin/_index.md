@@ -29,15 +29,18 @@ social:
   icon_pack: fab
   label: Follow me on Twitter
   link: https://twitter.com/aleferreiro1
-- icon: graduation-cap
-  icon_pack: fas
-  link: https://scholar.google.com/citations?hl=es&user=cHziajQAAAAJ
+- icon: researchgate
+  icon_pack: fab
+  link: https://www.researchgate.net/profile/Alejandro-Ferreiro-2
 - icon: github
   icon_pack: fab
   link: https://github.com/aleferreiro
 - icon: linkedin
   icon_pack: fab
-  link: https://www.linkedin.com/in/alejandro-manuel-ferreiro-431aa4b0/
+  link: https://www.linkedin.com/in/alejandro-manuel-ferreiro-431aa4b0
+- icon: instagram
+  icon_pack: fab
+  link: https://www.instagram.com/aleferreiro.ph
 superuser: true
 title: Alejandro Manuel Ferreiro
 ---
