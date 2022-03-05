@@ -1,27 +1,24 @@
 ---
-bio: My research interests include distributed robotics, mobile computing and programmable
-  matter.
+bio: My research interests include Evolution, Biogeography and Conservation of terrestrial vertebrates.
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: PhD Student in Biological Sciences
+    institution: National University of Córdoba
+    year: since 2017
+  - course: BSc in Biology
+    institution: National University of Córdoba
+    year: 2014
 email: ""
 highlight_name: true
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Population Genetics, Phylogeography and Phylogenetics
+- Species Distribution Modelling
+- Geographic conservation priorities
+- Mammals, Birds and herpetofauna.
 organizations:
-- name: Stanford University
-  url: https://www.stanford.edu/
-role: Professor of Artificial Intelligence
+- name: Instituto de Diversidad y Ecología Animal (IDEA)
+  url: https://www.idea.conicet.unc.edu.ar/
+role: PhD fellow
 social:
 - icon: envelope
   icon_pack: fas
@@ -31,22 +28,22 @@ social:
   icon: twitter
   icon_pack: fab
   label: Follow me on Twitter
-  link: https://twitter.com/GeorgeCushen
+  link: https://twitter.com/aleferreiro1
 - icon: graduation-cap
   icon_pack: fas
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  link: https://scholar.google.com/citations?hl=es&user=cHziajQAAAAJ
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/aleferreiro
 - icon: linkedin
   icon_pack: fab
-  link: https://www.linkedin.com/
+  link: https://www.linkedin.com/in/alejandro-manuel-ferreiro-431aa4b0/
 superuser: true
-title: Alice Bighetti (吳恩達)
+title: Alejandro Manuel Ferreiro
 ---
 
-Alice Bighetti is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+I am a Biologist currently finishing my PhD thesis in Biological Sciences at National University of Córdoba. My research interests include the evolution and Biogeography of Neotropical terrestrial vertebrates, in order to apply this knowledge for the conservation of biodiversity in South America.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+Outside the academy, my hobbies includes photography, outdoor activities and sports.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
