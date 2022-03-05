@@ -36,6 +36,10 @@ feature:
   icon: camera-retro
   icon_pack: fas
   name: Photography
+- description: 50%
+  icon: basketball-ball
+  icon_pack: fa
+  name: Sports
 
 # Uncomment to use emoji icons.
 #- icon: ':smile:'
