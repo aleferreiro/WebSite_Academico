@@ -1,0 +1,18 @@
+---
+title: Cronología con eventos geoclimaticos de relevancia en el Cenozoico en Sudamerica
+author: Alejandro Manuel Ferreiro
+date: '2022-03-08'
+slug: linea-de-tiempo
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2022-03-08T16:36:36-03:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
