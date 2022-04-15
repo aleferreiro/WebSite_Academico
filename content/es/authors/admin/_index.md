@@ -18,7 +18,7 @@ interests:
 organizations:
 - name: Instituto de Diversidad y Ecología Animal (IDEA)
   url: https://www.idea.conicet.unc.edu.ar/
-role: PhD fellow
+role: Becario Doctoral
 social:
 - icon: envelope
   icon_pack: fas

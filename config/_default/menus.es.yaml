@@ -4,21 +4,21 @@
 #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: About
+  - name: Acerca de
     url: '#about'
     weight: 10
-  - name: Posteos
-    url: '#posts'
-    weight: 40
-  - name: Artículos en revistas científicas
+  - name: Publicaciones
     url: '#publications'
     weight: 30
-  - name: Logros
-    url: '#accomplishments'
+  - name: Posteos
+    url: '#posts'
     weight: 50
+  - name: Cursos realizados
+    url: '#accomplishments'
+    weight: 60
   - name: Premios y Subsidios
     url: '#awards-funding'
-    weight: 50
+    weight: 70
   - name: Contacto
     url: '#contact'
     weight: 100
