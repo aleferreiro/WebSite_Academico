@@ -30,8 +30,8 @@ address:
   country: Argentina
   country_code: AR
 coordinates:
-  latitude: '37.4275'
-  longitude: '-122.1697'
+  latitude: '-31.418621'
+  longitude: '-64.188034'
 contact_links:
   - icon: twitter
     icon_pack: fab
