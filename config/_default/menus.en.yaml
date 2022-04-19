@@ -13,12 +13,6 @@ main:
   - name: Posts
     url: '#posts'
     weight: 50
-  - name: Accomplishments
-    url: '#accomplishments'
-    weight: 60
-  - name: Awards and Funding
-    url: '#awards-funding'
-    weight: 70
   - name: Contact
     url: '#contact'
     weight: 100

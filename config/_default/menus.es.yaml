@@ -13,12 +13,6 @@ main:
   - name: Posteos
     url: '#posts'
     weight: 50
-  - name: Cursos realizados
-    url: '#accomplishments'
-    weight: 60
-  - name: Premios y Subsidios
-    url: '#awards-funding'
-    weight: 70
   - name: Contacto
     url: '#contact'
     weight: 100
