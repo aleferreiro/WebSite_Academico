@@ -1,0 +1,34 @@
+---
+title: Phylogeographic analysis of spatial diffusion
+author: Alejandro Manuel Ferreiro
+date: '2022-05-03'
+slug: phylogeographic-analysis-of-spatial-diffusion
+categories:
+  - Genetics
+  - Phylogeography
+tags:
+  - BEAST
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2022-05-03T09:57:13-03:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+# Introduction
+The analyzes implemented in phylogeographic studies have traditionally allowed inferring the genetic structure and demographic processes that have shaped the current distribution of genetic lineages. Many times these demographic changes have been implicitly associated with range expansions of the species. However, these analyzes do not explicitly test these hypotheses. To do this, in this post we are going to introduce ourselves to the use of the SPREAD application. This software allows the explicit reconstruction of the distribution of lineages in space and time, taking into account the phylogenetic uncertainty (posterior probability of the nodes), and the spatial diffusion process (Kms in Ma).
+
+This post is an adaptation of [BEAST tutorial ](http://beast.community/workshop_continuous_diffusion_yfv).
+
+# Software needed
+  1. BEAUTi
+  1. BEAST v. 1.10.4
+  1. TRACER v. 1.7.2
+  1. Tree Annotator
+  1. spreaD3
+  
+

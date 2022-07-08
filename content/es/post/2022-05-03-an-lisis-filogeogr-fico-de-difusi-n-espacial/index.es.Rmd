@@ -1,0 +1,78 @@
+---
+title: Análisis filogeográfico de difusión espacial
+author: Alejandro Manuel Ferreiro
+date: '2022-05-03'
+slug: analisis-filogeografico-de-difusion-espacial
+categories:
+  - Genética
+  - Filogeografía
+tags:
+  - BEAST
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2022-05-03T10:01:24-03:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+# Introducción
+Los análisis implemnetados en estudios filogeográficos tradicionalmente han permitido inferir la estructura genética y los procesos demográficos que han moldeado la distribución actual de linajes genéticos. Muchas veces estos cambios demográficos han sido implícitamente asociados con expansiónes de rango de la especie. Sin embargo, estos análisis no ponen a prueba explicitamente estas hipótesis. Para ello, en este post vamos a introducirnos en el uso de la aplicación SPREAD. Este software permite la reconstrucción explicita de la distribución de los linajes en el espacio y en el tiempo, teniendo en cuenta la incertidumbre filogenética (probabilidad posterior de los nodos), y el proceso de difusión espacial (Kms en Ma).
+
+Este post es una adaptación del [tutorial del sitio web de BEAST](http://beast.community/workshop_continuous_diffusion_yfv).
+
+# Software necesario
+  1. BEAUTi v. 1.10.4
+  1. BEAST v. 1.10.4
+  1. TRACER v. 1.7.2
+  1. Tree Annotator
+  1. spreaD3
+  
+# ¿Cómo realizo el análisis de difusión espacial?
+
+## Archivos iniciales
+Para comenzar se debe partir de un [archivo fasta](./docs/sequences.fas) que contiene las secuencias a usar, y un [archivo nexus](./docs/coordinates.nex) con las coordenadas de las mismas. Además se requiere conocer el modelo evolutivo que mejor se ajusta a la matriz de secuencias, el cual puede ser calculados en algún software como [jModelTest](https://github.com/ddarriba/jmodeltest2).
+
+Además de estos archivos, con el objetivo de representar y visualizar geograficamente la dinámica espacial de la especie se necesitará un archivo geográfico vectorial del tipo geojson. Este se puede obtener en R mediante el siguiente código:
+
+```{r echo=TRUE }
+library(sf)
+library(rnaturalearth)
+
+# Descarga de poligono con limites de paises sudamericanos:
+Sudam = ne_states(iso_a2 = c("AR", "BO", "PY", "BR", "CL", "UY", "PE", "EC", "VE", "CO", "GY", "SR", "FR"),
+                                     returnclass = "sf")
+write_sf(obj = Sudam, dsn = "./ProvSudam.geojson")
+```
+
+## BEAUTi v. 1.10.4
+En este programa vamos a preparar nuestros datos para generar un archivo xml, que pueda ser leído por el programa BEAST. Para ello:
+1. Importar el archivo `sequence.fas`. Una vez importado chequear en la solapa `Partitions` que los datos sean correctos.
+2. Solapa `Traits`. Agregar una nueva partición de datos que contiene las coordenadas geográficas. Hacer click en `Import traits` para importar el `coordinates.nex`. Una vez importado, clickear en `Create partition from trait...` y nombrarla como `location`.
+3. Solapa `Sites`.
+4. Solapa `Clocks`.
+5. Solapa `Trees`.
+6. Solapa `States`.
+7. Solapa `Priors`.
+8. Solapa `MCMC`.
+
+## BEAST v 1.10.4
+Se puede correr el análisis en el software o BEAST, o bien utilizar algun servidor de internet como [CIPRES](https://www.phylo.org/) para ahorrarle trabajo a nuestra maquina.
+
+## Tracer 1.7.2
+Luego de la corrida, debemos chequear que el analisis haya tenido un largo de cadena suficiente para alcanzar valores de ESS mayores a 200 (convergencia). Para esto abrimos el archivo `.log` generado en el programa Tracer.
+Si los de ESS presentan probabilidad posterior mayores que 200, podemos chequear la **tasa de difusión** que se encuentra como `location.diffusionRate`. Esta indica en km/año. En especies, donde existen datos sobre tasas de dispersión este valor resulta importante para ser contrastado con estudio previos.
+
+## TreeAnnotator v. 1.10.4
+Este software permite generar arboles que resumen la información de los 10000 árboles recuperados mediantes inferencia bayesiana. En este software se debe definir el `Burn-in` o quemado de árboles que tienen menor probabilidad posterior, Usualmente se descarta o "quema" un 12-25% de los arboles (Usualmente se busca obtener un total de 10000 arboles antes del quemado).
+Dejar el resto de las opciones por dewfault, y cargar el archivo que generó el BEAST con extensión `.trees`. Como output se puede generar un archivo con extensión `.tree` que pueda ser leído en [Figtree](http://tree.bio.ed.ac.uk/software/figtree/).
+
+## spreaD3
+Finalmente para generar los patrones espaciales de difusión de los haplotipos y sus ancestros se debe abrir el software spreaD3.
+* Solapa `Data`. Cargo el archivo .tree generado a partir del TreeAnontator. A continuación seleccionar el latitud como `location1` y longitud como `location2`. Cargar un archivo geojson que contenga el mapa de fondo como por ejemplo mapa politico mundial. Click en `Generate JSON` y nombrar el archivo json de salida, incluyendo la extensión .json.
+* Solapa `Rendering`. Cargar el archivo json generado en la solapa anterior. Renderizarlo de forma kml, definiendo el nombre seguido de la extensión.
+* Esto generarà un archivo .kml en la carpeta que luego puede ser abierto usando el google earth.
+

@@ -1,0 +1,38 @@
+---
+title: Setting up a reference manager software
+author: Alejandro Manuel Ferreiro
+date: '2022-07-08'
+slug: setting-up-a-reference-manager-software
+categories: []
+tags:
+  - zotero
+  - research tools
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2022-07-08T15:19:26-03:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+## Managing references with [Zotero](https://www.zotero.org)
+```{r echo=FALSE, out.width="50%", fig.align="center"}
+knitr::include_graphics("https://media.giphy.com/media/26gsvcgO9EaGWFXqM/giphy.gif")
+```
+
+## Why Zotero?
+
+After years using Mendeley Desktop, last changes in the including the conversion of the Desktop to the new Mendeley Reference Manager have gone backwards in utilities to store and manipulate bibliography. Also, the new citation plugin for Word have given me several headaches when changing citation styles and to modify documents with old citation plugin.
+These troubles, have motivated me to search for a new tool to manage my bibliography and in-text cites, and that how I met Zotero.
+
+This free, open source tool and their add-ons provides all the goods from Mendeley Desktop but with improvements.
+
+In this post, I will share how I set up Zotero in order to organize and have synced all bibliography needed for research. This tutorial was based on the youtube videos of [Mastering Zotero ](https://www.youtube.com/watch?v=89sHZedSqPY&list=PLTB19TB2jaeUkmZFzv_HLEYMD1fj2TeHd) and a [tutorial]([__Mastering Zotero de YouTube__](https://www.youtube.com/watch?v=89sHZedSqPY&list=PLTB19TB2jaeUkmZFzv_HLEYMD1fj2TeHd)) from Stephen Chignell.
+
+
+## 
+

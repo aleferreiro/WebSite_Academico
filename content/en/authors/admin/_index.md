@@ -2,9 +2,9 @@
 bio: My research interests include Evolution, Biogeography and Conservation of terrestrial vertebrates.
 education:
   courses:
-  - course: PhD Student in Biological Sciences
+  - course: Ph.D. in Biological Sciences
     institution: National University of Córdoba
-    year: since 2017
+    year: 2022
   - course: BSc in Biology
     institution: National University of Córdoba
     year: 2014
@@ -45,7 +45,7 @@ superuser: true
 title: Alejandro Manuel Ferreiro
 ---
 
-I am a Biologist currently finishing my PhD thesis in Biological Sciences at National University of Córdoba. My research interests include the evolution and Biogeography of Neotropical terrestrial vertebrates, in order to apply this knowledge for the conservation of biodiversity in South America.
+I am a Biologist, that just finished his Ph.D. thesis in Biological Sciences at National University of Córdoba. My research interests include the evolution and biogeography of neotropical terrestrial vertebrates, in order to apply this knowledge for the conservation of biodiversity in South America.
 
 Outside the academy, my hobbies includes photography, outdoor activities and sports.
 

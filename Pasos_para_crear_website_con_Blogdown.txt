@@ -1,0 +1,11 @@
+# 1. Crear repo nuevo en github
+
+# 2. Crear nuevo proyecto en RStudio usando el link del repo de github
+
+# 3. Una vez creado el proyecto en R
+## 3.1. Intalar blogdown
+## 3.2. Instalar hugo
+
+# 4. Crear repo nuevo en github
+
+# 1. Crear repo nuevo en github
