@@ -22,7 +22,7 @@ publishDate: "2022-09-16"
 summary: 
 tags:
 -
-title: Reconstructing the distribution of Chacoan biota from current and past evidence, the case of the southern three‑banded armadillo _Tolypeutes matacus_ (Desmarest, 1804)
+title: Reconstructing the distribution of Chacoan biota from current and past evidence, the case of the southern three‑banded armadillo Tolypeutes matacus (Desmarest, 1804)
 ---
 
 {{% callout note %}}

@@ -2,11 +2,11 @@
 bio: Mis intereses científicos incluyen la evolución, biogeografía y conservación de vertebrados terrestres.
 education:
   courses:
-  - course: Doctorando en Ciencias Biológicas
-    institution: Universidad Nacionla de Córdoba
-    year: desde 2017
+  - course: Doctor en Ciencias Biológicas
+    institution: Universidad Nacional de Córdoba
+    year: 2022
   - course: Biólogo
-    institution: Universidad Nacionla de Córdoba
+    institution: Universidad Nacional de Córdoba
     year: 2014
 email: ""
 highlight_name: true
