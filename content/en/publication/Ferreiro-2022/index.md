@@ -1,29 +1,28 @@
 ---
-abstract: Little is known about phylogeography of armadillo species native to southern South America. In this study we describe the phylogeography of the screaming hairy armadillo Chaetophractus vellerosus, discuss previous hypothesis about the origin of its disjunct distribution and propose an alternative one, based on novel information on genetic variability. Variation of partial sequences of mitochondrial DNA Control Region (CR) from 73 individuals from 23 localities were analyzed to carry out a phylogeographic analysis using neutrality tests, mismatch distribution, median-joining (MJ) network and paleontological records. We found 17 polymorphic sites resulting in 15 haplotypes. Two new geographic records that expand known distribution of the species are presented; one of them links the distributions of recently synonimized species C. nationi and C. vellerosus. Screaming hairy armadillo phylogeographic pattern can be addressed as category V of Avise, common widespread linages plus closely related lineages confined to one or a few nearby locales each. The older linages are distributed in the north-central area of the species distribution range in Argentina (i.e. ancestral area of distribution). C. vellerosus seems to be a low vagility species that expanded, and probably is expanding, its distribution range while presents signs of genetic structuring in central areas. To explain the disjunct distribution, a hypothesis of extinction of the species in intermediate areas due to quaternary climatic shift to more humid conditions was proposed. We offer an alternative explanation, long distance colonization, based on null genetic variability, paleontological record and evidence of alternance of cold/arid and temperate/humid climatic periods during the last million years in southern South America.
+abstract: Climatic oscillations acted as an essential factor in molding the distribution and composition of Neotropical biota. However, their effects on the South American Chaco are still poorly known. In this work, we present an updated collection of records of one of its flagship species, Tolypeutes matacus. We analyze the species' range dynamics in current and past scenarios to unveil the effects of past changes over the Chacoan biota. We construct three niches, one with current data (current niche), the other using Pleistocenic occurrence data and predictors from the Last Glacial Maximum (glacial niche), and the last one combining current and Pleistocene data to generate a multitemporal niche. Niches were projected to Current, Mid-Holocene, Last Glacial Maximum, and Last Interglacial scenarios. We obtain 398 records for the species, corresponding to current, historical, Holocene, and Pleistocene records. Current distribution occurs mainly in the currently Chaco region. For current niche reconstructions, suitable areas were smaller than those found nowadays, mainly during the Last Interglacial and Last Glacial Maximum. Holocene reconstruction recovers a distribution of suitable areas pretty similar to the present times. In contrast, glacial niche projection shows higher suitability values in the Pampean Region in all periods analyzed. Multitemporal niche projections showed similar results to those obtained from the current niche projections. Climatic oscillations seem to have significantly impacted the distribution of the species, generating retractions during past times and a period of range stability since the Holocene. Differences between niche projections suggest that Pampean populations may have evolved in different conditions than those from the Chacoan region.
 authors:
-- Sebastian Poljak
 - admin
+- Esteban Soibelzon
+- Juan Diego Pinotti
+- Sebastián Poljak
 - Marina B. Chiappero
-- Julieta Sanchez
-- Magalí Gabrielli
-- Marta S. Lizarralde
-date: "2018-01-11"
-doi: "10.1371/journal.pone.0190944"
+date: "2022-09-16"
+doi: "10.1007/s10914-022-09627-3"
 featured: false
-image:
+image: 
   caption: 
   focal_point: ""
   preview_only: false
 projects: []
-publication: '*PLoS ONE*'
+publication: '*Journal of Mammalian Evolution*'
 publication_short: ""
 publication_types:
 - "2"
-publishDate: "2017-01-01T00:00:00Z"
+publishDate: "2022-09-16"
 summary: 
 tags:
 -
-title: Phylogeography of screaming hairy armadillo Chaetophractus vellerosus, Successive disjunctions and extinctions due to cyclical climatic changes in southern South America
+title: Reconstructing the distribution of Chacoan biota from current and past evidence: the case of the southern three‑banded armadillo _Tolypeutes matacus_ (Desmarest, 1804)
 ---
 
 {{% callout note %}}
