@@ -20,19 +20,53 @@ projects: []
 ---
 
 ## Managing references with [Zotero](https://www.zotero.org)
+
+One of the most exhausting activities for scientific researchers is the organization and management of the bibliography, not only for reading, but also so that it can be cited in own manuscripts. For this reason, the development of software that facilitates this work is a powerful tool.
+
 ```{r echo=FALSE, out.width="50%", fig.align="center"}
 knitr::include_graphics("https://media.giphy.com/media/26gsvcgO9EaGWFXqM/giphy.gif")
 ```
 
 ## Why Zotero?
 
-After years using Mendeley Desktop, last changes in the including the conversion of the Desktop to the new Mendeley Reference Manager have gone backwards in utilities to store and manipulate bibliography. Also, the new citation plugin for Word have given me several headaches when changing citation styles and to modify documents with old citation plugin.
-These troubles, have motivated me to search for a new tool to manage my bibliography and in-text cites, and that how I met Zotero.
+After years using Mendeley Desktop, the conversion of the Desktop to the new Mendeley Reference Manager have gone backwards in utilities to store and manipulate bibliography. Also, the new citation plugin for Word have given me several headaches when changing citation styles and to modify documents with old citation plugin.
+These troubles, have motivated me to search for a new tool to manage my bibliography and in-text cites, and that ia how I met Zotero.
 
 This free, open source tool and their add-ons provides all the goods from Mendeley Desktop but with improvements.
 
-In this post, I will share how I set up Zotero in order to organize and have synced all bibliography needed for research. This tutorial was based on the youtube videos of [Mastering Zotero ](https://www.youtube.com/watch?v=89sHZedSqPY&list=PLTB19TB2jaeUkmZFzv_HLEYMD1fj2TeHd) and a [tutorial]([__Mastering Zotero de YouTube__](https://www.youtube.com/watch?v=89sHZedSqPY&list=PLTB19TB2jaeUkmZFzv_HLEYMD1fj2TeHd)) from Stephen Chignell.
+In this post, I will share how I set up Zotero in order to organize and have synced all bibliography needed for research. This tutorial was based on the youtube videos of [Mastering Zotero ](https://www.youtube.com/watch?v=89sHZedSqPY&list=PLTB19TB2jaeUkmZFzv_HLEYMD1fj2TeHd) and a [tutorial](https://www.researchgate.net/publication/325828616_Tutorial_The_Best_Reference_Manager_Setup_Zotero_ZotFile_Cloud_Storage?channel=doi&linkId=5c05d0b2a6fdcc315f9adbae&showFulltext=true) from Stephen Chignell.
 
 
-## 
+## 1. Installing Zotero and the Zotero Conector (for Google Chrome)
+
+Download [Zotero](https://www.zotero.org/download/client/dl?channel=release&platform=win32&version=6.0.9) and [Zotero Conector](https://chrome.google.com/webstore/detail/ekhagklcjbdpajgpjgmbionohlpdbjgc) and install them.
+
+Using Zotero conector to download items generates automatic copies of the web pages where you download the articles as default. In my case, this information was unrelevant, so I turn off this option by: 
+
+Zotero conector icon (right click) `r fontawesome::fa("arrow-right", fill = "black")` Options `r fontawesome::fa("arrow-right", fill = "black")` Advanced `r fontawesome::fa("arrow-right", fill = "black")` Config Editor `r fontawesome::fa("arrow-right", fill = "black")` automaticSnapshots = false
+
+## 2. Installing and setting-up Zotfile
+
+[Zotfile](http://zotfile.com/) is an Add-on that allows you to manipulate pdfs. For this, it is recommended to use a cloud service to save the PDFs, because Zotero Cloud only gives 300 MB for free.
+I created an account at [MEGASync](https://mega.io/), that offers free 50GB of space and I save in that cloud my PDFs.
+
+Once we created the cloud-synchronized folder where we can save our documents, we install and configure Zotfile:
+
+1. In the Zotero Desktop, go to _Tools_ `r fontawesome::fa("arrow-right", fill = "black")` _Add-ons_
+2. Click over the gear icon, and then click _Install add-on from file_
+3. Navigate to select the .xpi file dowlnloaded
+4. ZotFile should be installed, but you may need to restart Zotero
+
+Once installed, we should set up the PDF syncing.
+
+1. _Tools_ `r fontawesome::fa("arrow-right", fill = "black")` _Zotfile preferences_
+2. In the _General settings_ tab, set _SourceFolder for Attaching New files_ to any folder where you ussualy download PDFs, such as _Downloads_.
+3. Set _Location of Files_ to _Custom Location_ and point it to the folder you created in your
+cloud syncing app.
+
+And voila! You can download and sync your references in just a few clicks and withour worrying about disk space.
+
+For more about Zotero I strongly recommend the youtube videos of [Mastering Zotero ](https://www.youtube.com/watch?v=89sHZedSqPY&list=PLTB19TB2jaeUkmZFzv_HLEYMD1fj2TeHd) and the [tutorial](https://www.researchgate.net/publication/325828616_Tutorial_The_Best_Reference_Manager_Setup_Zotero_ZotFile_Cloud_Storage?channel=doi&linkId=5c05d0b2a6fdcc315f9adbae&showFulltext=true) from Stephen Chignell.
+
+
 

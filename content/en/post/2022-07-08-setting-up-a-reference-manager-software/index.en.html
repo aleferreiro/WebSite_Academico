@@ -23,15 +23,40 @@ projects: []
 
 <div id="managing-references-with-zotero" class="section level2">
 <h2>Managing references with <a href="https://www.zotero.org">Zotero</a></h2>
+<p>One of the most exhausting activities for scientific researchers is the organization and management of the bibliography, not only for reading, but also so that it can be cited in own manuscripts. For this reason, the development of software that facilitates this work is a powerful tool.</p>
 <p><img src="https://media.giphy.com/media/26gsvcgO9EaGWFXqM/giphy.gif" width="50%" style="display: block; margin: auto;" /></p>
 </div>
 <div id="why-zotero" class="section level2">
 <h2>Why Zotero?</h2>
-<p>After years using Mendeley Desktop, last changes in the including the conversion of the Desktop to the new Mendeley Reference Manager have gone backwards in utilities to store and manipulate bibliography. Also, the new citation plugin for Word have given me several headaches when changing citation styles and to modify documents with old citation plugin.
-These troubles, have motivated me to search for a new tool to manage my bibliography and in-text cites, and that how I met Zotero.</p>
+<p>After years using Mendeley Desktop, the conversion of the Desktop to the new Mendeley Reference Manager have gone backwards in utilities to store and manipulate bibliography. Also, the new citation plugin for Word have given me several headaches when changing citation styles and to modify documents with old citation plugin.
+These troubles, have motivated me to search for a new tool to manage my bibliography and in-text cites, and that ia how I met Zotero.</p>
 <p>This free, open source tool and their add-ons provides all the goods from Mendeley Desktop but with improvements.</p>
-<p>In this post, I will share how I set up Zotero in order to organize and have synced all bibliography needed for research. This tutorial was based on the youtube videos of <a href="https://www.youtube.com/watch?v=89sHZedSqPY&amp;list=PLTB19TB2jaeUkmZFzv_HLEYMD1fj2TeHd">Mastering Zotero</a> and a <a href="%5B__Mastering%20Zotero%20de%20YouTube__%5D(https://www.youtube.com/watch?v=89sHZedSqPY&amp;list=PLTB19TB2jaeUkmZFzv_HLEYMD1fj2TeHd)">tutorial</a> from Stephen Chignell.</p>
+<p>In this post, I will share how I set up Zotero in order to organize and have synced all bibliography needed for research. This tutorial was based on the youtube videos of <a href="https://www.youtube.com/watch?v=89sHZedSqPY&amp;list=PLTB19TB2jaeUkmZFzv_HLEYMD1fj2TeHd">Mastering Zotero</a> and a <a href="https://www.researchgate.net/publication/325828616_Tutorial_The_Best_Reference_Manager_Setup_Zotero_ZotFile_Cloud_Storage?channel=doi&amp;linkId=5c05d0b2a6fdcc315f9adbae&amp;showFulltext=true">tutorial</a> from Stephen Chignell.</p>
 </div>
-<div id="section" class="section level2">
-<h2></h2>
+<div id="installing-zotero-and-the-zotero-conector-for-google-chrome" class="section level2">
+<h2>1. Installing Zotero and the Zotero Conector (for Google Chrome)</h2>
+<p>Download <a href="https://www.zotero.org/download/client/dl?channel=release&amp;platform=win32&amp;version=6.0.9">Zotero</a> and <a href="https://chrome.google.com/webstore/detail/ekhagklcjbdpajgpjgmbionohlpdbjgc">Zotero Conector</a> and install them.</p>
+<p>Using Zotero conector to download items generates automatic copies of the web pages where you download the articles as default. In my case, this information was unrelevant, so I turn off this option by:</p>
+<p>Zotero conector icon (right click) <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:black;overflow:visible;position:relative;"><path d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"/></svg> Options <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:black;overflow:visible;position:relative;"><path d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"/></svg> Advanced <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:black;overflow:visible;position:relative;"><path d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"/></svg> Config Editor <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:black;overflow:visible;position:relative;"><path d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"/></svg> automaticSnapshots = false</p>
+</div>
+<div id="installing-and-setting-up-zotfile" class="section level2">
+<h2>2. Installing and setting-up Zotfile</h2>
+<p><a href="http://zotfile.com/">Zotfile</a> is an Add-on that allows you to manipulate pdfs. For this, it is recommended to use a cloud service to save the PDFs, because Zotero Cloud only gives 300 MB for free.
+I created an account at <a href="https://mega.io/">MEGASync</a>, that offers free 50GB of space and I save in that cloud my PDFs.</p>
+<p>Once we created the cloud-synchronized folder where we can save our documents, we install and configure Zotfile:</p>
+<ol style="list-style-type: decimal">
+<li>In the Zotero Desktop, go to <em>Tools</em> <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:black;overflow:visible;position:relative;"><path d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"/></svg> <em>Add-ons</em></li>
+<li>Click over the gear icon, and then click <em>Install add-on from file</em></li>
+<li>Navigate to select the .xpi file dowlnloaded</li>
+<li>ZotFile should be installed, but you may need to restart Zotero</li>
+</ol>
+<p>Once installed, we should set up the PDF syncing.</p>
+<ol style="list-style-type: decimal">
+<li><em>Tools</em> <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:black;overflow:visible;position:relative;"><path d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"/></svg> <em>Zotfile preferences</em></li>
+<li>In the <em>General settings</em> tab, set <em>SourceFolder for Attaching New files</em> to any folder where you ussualy download PDFs, such as <em>Downloads</em>.</li>
+<li>Set <em>Location of Files</em> to <em>Custom Location</em> and point it to the folder you created in your
+cloud syncing app.</li>
+</ol>
+<p>And voila! You can download and sync your references in just a few clicks and withour worrying about disk space.</p>
+<p>For more about Zotero I strongly recommend the youtube videos of <a href="https://www.youtube.com/watch?v=89sHZedSqPY&amp;list=PLTB19TB2jaeUkmZFzv_HLEYMD1fj2TeHd">Mastering Zotero</a> and the <a href="https://www.researchgate.net/publication/325828616_Tutorial_The_Best_Reference_Manager_Setup_Zotero_ZotFile_Cloud_Storage?channel=doi&amp;linkId=5c05d0b2a6fdcc315f9adbae&amp;showFulltext=true">tutorial</a> from Stephen Chignell.</p>
 </div>
