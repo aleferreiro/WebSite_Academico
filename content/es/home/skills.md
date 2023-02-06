@@ -16,27 +16,27 @@ subtitle:
 # - Add/remove as many `feature` blocks below as you like.
 # - For available icons, see: https://wowchemy.com/docs/page-builder/#icons
 feature:
-- description: 70%
+- description: 
   icon: dna
   icon_pack: fa
   name: Análisis genéticos
-- description: 70%
+- description: 
   icon: flask
   icon_pack: fa
   name: Laboratorio
-- description: 70%
+- description: 
   icon: layer-group
   icon_pack: fa
   name: SIG
-- description: 70%
+- description: 
   icon: r-project
   icon_pack: fab
   name: R
-- description: 20%
+- description: 
   icon: camera-retro
   icon_pack: fas
   name: Fotografía
-- description: 50%
+- description: 
   icon: basketball-ball
   icon_pack: fa
   name: Deportes
