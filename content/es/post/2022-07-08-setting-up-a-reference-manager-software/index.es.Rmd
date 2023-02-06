@@ -1,0 +1,71 @@
+---
+title: Configurando el manejo de la bibliografía con Zotero
+author: Alejandro Manuel Ferreiro
+date: '2022-07-08'
+slug: setting-up-a-reference-manager-software
+categories: []
+tags:
+  - zotero
+  - research tools
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2022-07-08T15:19:26-03:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+## Organizando referencias con [Zotero](https://www.zotero.org)
+
+Una de las actividades más agotadoras para los investigadores científicos es la organización y gestión de la bibliografía, no sólo para su lectura, sino también para que pueda ser citada en los propios manuscritos. Por ello, el desarrollo de software que facilite esta labor es una poderosa herramienta.
+
+```{r echo=FALSE, out.width="50%", fig.align="center"}
+knitr::include_graphics("https://media.giphy.com/media/26gsvcgO9EaGWFXqM/giphy.gif")
+```
+
+## Por qué Zotero?
+
+Después de años utilizando Mendeley, la conversión del Mendeley Desktop al nuevo Mendeley Reference Manager ha supuesto un retroceso en las utilidades para almacenar y manipular bibliografía. Además, el nuevo plugin de citas para Word me ha dado varios dolores de cabeza a la hora de cambiar estilos de citas y modificar documentos con el antiguo plugin de citas.
+Estos problemas, me han motivado a buscar una nueva herramienta para gestionar mi bibliografía y citas en el texto, y así es como conocí Zotero.
+
+Esta herramienta gratuita de código abierto y sus complementos proporciona todo lo bueno de Mendeley Desktop pero con mejoras.
+
+En este post, voy a compartir cómo he configurado Zotero con el fin de organizar y tener sincronizada toda la bibliografía necesaria para la investigación. Este tutorial se basó en los videos de youtube de [Mastering Zotero](https://www.youtube.com/watch?v=89sHZedSqPY&list=PLTB19TB2jaeUkmZFzv_HLEYMD1fj2TeHd) y el [tutorial](https://www.researchgate.net/publication/325828616_Tutorial_The_Best_Reference_Manager_Setup_Zotero_ZotFile_Cloud_Storage?channel=doi&linkId=5c05d0b2a6fdcc315f9adbae&showFulltext=true) de Stephen Chignell.
+
+
+## 1. Instalación de Zotero y del Conector Zotero (para Google Chrome)
+
+Descargar [Zotero](https://www.zotero.org/download/client/dl?channel=release&platform=win32&version=6.0.9) y [Zotero Conector](https://chrome.google.com/webstore/detail/ekhagklcjbdpajgpjgmbionohlpdbjgc) e instalarlos.
+
+El uso del conector Zotero para descargar artículos genera por defecto copias automáticas de las páginas web donde se descargan los artículos. En mi caso, esta información no era relevante, por lo que desactivé esta opción de la siguiente manera: 
+
+Ícono del Conector Zotero(click derecho) `r fontawesome::fa("arrow-right", fill = "black")` Opciones `r fontawesome::fa("arrow-right", fill = "black")` Avanzadas `r fontawesome::fa("arrow-right", fill = "black")` Config Editor `r fontawesome::fa("arrow-right", fill = "black")` automaticSnapshots = false
+
+## 2. Instalación y configuración de Zotfile
+
+[Zotfile](http://zotfile.com/) es un Add-on que permite manipular PDFs. Para esto, se recomienda, se recomienda utilizar un servicio en la nube para guardar los PDF, porque Zotero Cloud sólo da 300 MB gratis.
+He creado una cuenta en [MEGASync](https://mega.io/), que ofrece 50 GB gratuitos de espacio y guardo en esa nube mis PDF.
+
+Una vez creada la carpeta sincronizada con la nube donde guardar nuestros documentos, instalamos y configuramos Zotfile:
+
+1. En la aplicación de escritorio de Zotero, ir a _Herramientas_ `r fontawesome::fa("arrow-right", fill = "black")` _Add-ons_
+2. Click sobre el simbolo de la tuerca, y luego click en _Instalar add-on desde archivo_
+3. Navegue para seleccionar el archivo .xpi descargado
+4. ZotFile debería estar instalado, pero es posible que tenga que reiniciar Zotero
+
+Una vez instalado, debemos configurar la sincronización de PDF.
+
+1. _Herramientas_ `r fontawesome::fa("arrow-right", fill = "black")` _Zotfile preferences_
+2. En la solapa _General settings_, setear _Source Folder for Attaching New files_ a cualquier carpeta donde usualmente descargas PDFs, como _Descargas_.
+3. Setea _Location of Files_ a _Custom Location_ y dirigela a la carpeta que creaste que se sincroniza con el servicio de nube.
+
+Y ¡voilá! Puedes descargar y sincronizar tus referencias en unos pocos clics y sin preocuparte por el espacio en disco.
+
+Para más información sobre Zotero recomiendo especialmente los vídeos de youtube de [Mastering Zotero ](https://www.youtube.com/watch?v=89sHZedSqPY&list=PLTB19TB2jaeUkmZFzv_HLEYMD1fj2TeHd) y el [tutorial](https://www.researchgate.net/publication/325828616_Tutorial_The_Best_Reference_Manager_Setup_Zotero_ZotFile_Cloud_Storage?channel=doi&linkId=5c05d0b2a6fdcc315f9adbae&showFulltext=true) de Stephen Chignell.
+
+
+
