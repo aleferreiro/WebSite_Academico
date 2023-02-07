@@ -30,5 +30,49 @@ This post is an adaptation of [BEAST tutorial ](http://beast.community/workshop_
   1. TRACER v. 1.7.2
   1. Tree Annotator
   1. spreaD3
-  
 
+# How do I perform spatial diffusion analysis?
+
+## Starting files
+We start with a [fasta file](./docs/sequences.fas) that contains the sequences, and a [nexus file](./docs/coordinates.nex) containing geographical coordinates of each sequence. AdemásIn addition, it is necessary to know the evolutionary model that best fits the sequence matrix, which can be calculated in software such as [jModelTest](https://github.com/ddarriba/jmodeltest2).
+
+In addition to these files, in order to geographically represent and visualise the spatial dynamics of the species, a vector geographic file of the type geojson will be needed. This can be obtained in R using the following code:
+
+```{r echo=TRUE }
+library(sf)
+library(rnaturalearth)
+
+# Download polygons of South American country boundaries:
+Sudam = ne_states(iso_a2 = c("AR", "BO", "PY", "BR", "CL", "UY", "PE", "EC", "VE", "CO", "GY", "SR", "FR"),
+                                     returnclass = "sf")
+write_sf(obj = Sudam, dsn = "./ProvSudam.geojson")
+```
+
+## BEAUTi v. 1.10.4
+In this programme we are going to prepare our data to generate an xml file, which can be read by the BEAST programme. To do this::
+1. Import the file `sequence.fas`. Once imported, check in the `Partitions` tab that the data is correct.
+2. In the `Traits` tab, add a new data partition with geographical coordinates. Click `Import traits` to import `coordinates.nex`. Then, click `Create partition from trait...` and name the partition as you wish, for example `location`.
+3. `Sites` tab.
+4. `Clocks` tab.
+5. `Trees` tab.
+6. `States` tab.
+7. `Priors` tab.
+8. `MCMC` tab.
+
+## BEAST v 1.10.4
+You can run the analysis in the software or BEAST, or you can use an internet server like [CIPRES](https://www.phylo.org/) to save work for our machine.
+
+## Tracer 1.7.2
+After the run, we must check that the analysis has had a chain length long enough to reach ESS values greater than 200 (convergence). For this we open the `.log` file generated in the Tracer program.
+If those of ESS have posterior probabilities greater than 200, we can check the **diffusion rate** which is found to be  `location.diffusionRate`. This is indicated in km/year. In species, where data on dispersal rates are available, this value is important for comparison with previous studies.
+
+
+## TreeAnnotator v. 1.10.4
+This software allows to generate trees that summarise the information of the 10000 trees retrieved by Bayesian inference. In this software you must define the `Burn-in` of low probability trees. Usually 12-25% of the trees are discarded or "burned" (usually aiming for a total of 10,000 trees before burning).
+Leave other options by default, and load the file generated after BEAST run with the extention `.trees`. As output you can generate a file `.tree` that can be read in [Figtree](http://tree.bio.ed.ac.uk/software/figtree/).
+
+## spreaD3
+Finally, to generate the spatial patterns of haplotypes and their ancestors, the spreaD3 software must be opened.
+* `Data` tab. Load the .tree file obtained with TreeAnontator. Next, select `location1` as latitude and `location2` as longitude. After that, you must load a geojson file with the baseline map you will use, for eg. South American bordes. Click `Generate JSON` and name the json file of output, including the extention .json.
+* `Rendering` tab. Load the json file generated in the previous tab. Render it in kml form, defining the name followed by the extension.
+* This will generate a .kml file in the folder which can then be opened using google earth.
