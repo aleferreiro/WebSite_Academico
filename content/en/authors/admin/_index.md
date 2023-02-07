@@ -16,9 +16,9 @@ interests:
 - Geographic conservation priorities
 - Mammals, Birds and herpetofauna.
 organizations:
-- name: Instituto de Diversidad y Ecología Animal (IDEA)
+- name: Institute of Animal Diversity and Ecology (IDEA)
   url: https://www.idea.conicet.unc.edu.ar/
-role: PhD fellow
+role: Ph.D. in Biological Sciences
 social:
 - icon: envelope
   icon_pack: fas
@@ -45,7 +45,7 @@ superuser: true
 title: Alejandro Manuel Ferreiro
 ---
 
-I am a Biologist, that just finished his Ph.D. thesis in Biological Sciences at National University of Córdoba. My research interests include the evolution and biogeography of neotropical terrestrial vertebrates, in order to apply this knowledge for the conservation of biodiversity in South America.
+I am a Biologist, that just finished his Ph.D. thesis in Biological Sciences at National University of Córdoba, Argentina. My research interests include the evolution and biogeography of neotropical terrestrial vertebrates, in order to apply this knowledge for the conservation of biodiversity in South America.
 
 Outside the academy, my hobbies includes photography, outdoor activities and sports.
 
