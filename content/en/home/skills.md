@@ -33,6 +33,18 @@ feature:
   icon_pack: fab
   name: R
 - description: 
+  icon: terminal
+  icon_pack: fas
+  name: Unix
+- description: 
+  icon: python
+  icon_pack: fab
+  name: Python
+- description: 
+  icon: github
+  icon_pack: fab
+  name: Github
+- description: 
   icon: camera-retro
   icon_pack: fas
   name: Photography

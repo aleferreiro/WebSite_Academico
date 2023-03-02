@@ -37,52 +37,55 @@ projects: []
 <li>spreaD3</li>
 </ol>
 </div>
-<div id="cómo-realizo-el-análisis-de-difusión-espacial" class="section level1">
-<h1>¿Cómo realizo el análisis de difusión espacial?</h1>
-<div id="archivos-iniciales" class="section level2">
-<h2>Archivos iniciales</h2>
-<p>Para comenzar se debe partir de un <a href="./docs/sequences.fas">archivo fasta</a> que contiene las secuencias a usar, y un <a href="./docs/coordinates.nex">archivo nexus</a> con las coordenadas de las mismas. Además se requiere conocer el modelo evolutivo que mejor se ajusta a la matriz de secuencias, el cual puede ser calculados en algún software como <a href="https://github.com/ddarriba/jmodeltest2">jModelTest</a>.</p>
-<p>Además de estos archivos, con el objetivo de representar y visualizar geograficamente la dinámica espacial de la especie se necesitará un archivo geográfico vectorial del tipo geojson. Este se puede obtener en R mediante el siguiente código:</p>
+<div id="how-do-i-perform-spatial-diffusion-analysis" class="section level1">
+<h1>How do I perform spatial diffusion analysis?</h1>
+<div id="starting-files" class="section level2">
+<h2>Starting files</h2>
+<p>We start with a <a href="./docs/sequences.fas">fasta file</a> that contains the sequences, and a <a href="./docs/coordinates.nex">nexus file</a> containing geographical coordinates of each sequence. AdemásIn addition, it is necessary to know the evolutionary model that best fits the sequence matrix, which can be calculated in software such as <a href="https://github.com/ddarriba/jmodeltest2">jModelTest</a>.</p>
+<p>In addition to these files, in order to geographically represent and visualise the spatial dynamics of the species, a vector geographic file of the type geojson will be needed. This can be obtained in R using the following code:</p>
 <pre class="r"><code>library(sf)</code></pre>
 <pre><code>## Linking to GEOS 3.9.1, GDAL 3.4.3, PROJ 7.2.1; sf_use_s2() is TRUE</code></pre>
 <pre class="r"><code>library(rnaturalearth)
 
-# Descarga de poligono con limites de paises sudamericanos:
+# Download polygons of South American country boundaries:
 Sudam = ne_states(iso_a2 = c(&quot;AR&quot;, &quot;BO&quot;, &quot;PY&quot;, &quot;BR&quot;, &quot;CL&quot;, &quot;UY&quot;, &quot;PE&quot;, &quot;EC&quot;, &quot;VE&quot;, &quot;CO&quot;, &quot;GY&quot;, &quot;SR&quot;, &quot;FR&quot;),
                                      returnclass = &quot;sf&quot;)
 write_sf(obj = Sudam, dsn = &quot;./ProvSudam.geojson&quot;)</code></pre>
+<pre><code>## Warning in CPL_write_ogr(obj, dsn, layer, driver,
+## as.character(dataset_options), : GDAL Error 6: DeleteLayer() not supported by
+## this dataset.</code></pre>
 </div>
 <div id="beauti-v.-1.10.4" class="section level2">
 <h2>BEAUTi v. 1.10.4</h2>
-<p>En este programa vamos a preparar nuestros datos para generar un archivo xml, que pueda ser leído por el programa BEAST. Para ello:
-1. Importar el archivo <code>sequence.fas</code>. Una vez importado chequear en la solapa <code>Partitions</code> que los datos sean correctos.
-2. Solapa <code>Traits</code>. Agregar una nueva partición de datos que contiene las coordenadas geográficas. Hacer click en <code>Import traits</code> para importar el <code>coordinates.nex</code>. Una vez importado, clickear en <code>Create partition from trait...</code> y nombrarla como <code>location</code>.
-3. Solapa <code>Sites</code>.
-4. Solapa <code>Clocks</code>.
-5. Solapa <code>Trees</code>.
-6. Solapa <code>States</code>.
-7. Solapa <code>Priors</code>.
-8. Solapa <code>MCMC</code>.</p>
+<p>In this programme we are going to prepare our data to generate an xml file, which can be read by the BEAST programme. To do this::
+1. Import the file <code>sequence.fas</code>. Once imported, check in the <code>Partitions</code> tab that the data is correct.
+2. In the <code>Traits</code> tab, add a new data partition with geographical coordinates. Click <code>Import traits</code> to import <code>coordinates.nex</code>. Then, click <code>Create partition from trait...</code> and name the partition as you wish, for example <code>location</code>.
+3. <code>Sites</code> tab.
+4. <code>Clocks</code> tab.
+5. <code>Trees</code> tab.
+6. <code>States</code> tab.
+7. <code>Priors</code> tab.
+8. <code>MCMC</code> tab.</p>
 </div>
 <div id="beast-v-1.10.4" class="section level2">
 <h2>BEAST v 1.10.4</h2>
-<p>Se puede correr el análisis en el software o BEAST, o bien utilizar algun servidor de internet como <a href="https://www.phylo.org/">CIPRES</a> para ahorrarle trabajo a nuestra maquina.</p>
+<p>You can run the analysis in the software or BEAST, or you can use an internet server like <a href="https://www.phylo.org/">CIPRES</a> to save work for our machine.</p>
 </div>
 <div id="tracer-1.7.2" class="section level2">
 <h2>Tracer 1.7.2</h2>
-<p>Luego de la corrida, debemos chequear que el analisis haya tenido un largo de cadena suficiente para alcanzar valores de ESS mayores a 200 (convergencia). Para esto abrimos el archivo <code>.log</code> generado en el programa Tracer.
-Si los de ESS presentan probabilidad posterior mayores que 200, podemos chequear la <strong>tasa de difusión</strong> que se encuentra como <code>location.diffusionRate</code>. Esta indica en km/año. En especies, donde existen datos sobre tasas de dispersión este valor resulta importante para ser contrastado con estudio previos.</p>
+<p>After the run, we must check that the analysis has had a chain length long enough to reach ESS values greater than 200 (convergence). For this we open the <code>.log</code> file generated in the Tracer program.
+If those of ESS have posterior probabilities greater than 200, we can check the <strong>diffusion rate</strong> which is found to be <code>location.diffusionRate</code>. This is indicated in km/year. In species, where data on dispersal rates are available, this value is important for comparison with previous studies.</p>
 </div>
 <div id="treeannotator-v.-1.10.4" class="section level2">
 <h2>TreeAnnotator v. 1.10.4</h2>
-<p>Este software permite generar arboles que resumen la información de los 10000 árboles recuperados mediantes inferencia bayesiana. En este software se debe definir el <code>Burn-in</code> o quemado de árboles que tienen menor probabilidad posterior, Usualmente se descarta o “quema” un 12-25% de los arboles (Usualmente se busca obtener un total de 10000 arboles antes del quemado).
-Dejar el resto de las opciones por dewfault, y cargar el archivo que generó el BEAST con extensión <code>.trees</code>. Como output se puede generar un archivo con extensión <code>.tree</code> que pueda ser leído en <a href="http://tree.bio.ed.ac.uk/software/figtree/">Figtree</a>.</p>
+<p>This software allows to generate trees that summarise the information of the 10000 trees retrieved by Bayesian inference. In this software you must define the <code>Burn-in</code> of low probability trees. Usually 12-25% of the trees are discarded or “burned” (usually aiming for a total of 10,000 trees before burning).
+Leave other options by default, and load the file generated after BEAST run with the extention <code>.trees</code>. As output you can generate a file <code>.tree</code> that can be read in <a href="http://tree.bio.ed.ac.uk/software/figtree/">Figtree</a>.</p>
 </div>
 <div id="spread3" class="section level2">
 <h2>spreaD3</h2>
-<p>Finalmente para generar los patrones espaciales de difusión de los haplotipos y sus ancestros se debe abrir el software spreaD3.
-* Solapa <code>Data</code>. Cargo el archivo .tree generado a partir del TreeAnontator. A continuación seleccionar el latitud como <code>location1</code> y longitud como <code>location2</code>. Cargar un archivo geojson que contenga el mapa de fondo como por ejemplo mapa politico mundial. Click en <code>Generate JSON</code> y nombrar el archivo json de salida, incluyendo la extensión .json.
-* Solapa <code>Rendering</code>. Cargar el archivo json generado en la solapa anterior. Renderizarlo de forma kml, definiendo el nombre seguido de la extensión.
-* Esto generarà un archivo .kml en la carpeta que luego puede ser abierto usando el google earth.</p>
+<p>Finally, to generate the spatial patterns of haplotypes and their ancestors, the spreaD3 software must be opened.
+* <code>Data</code> tab. Load the .tree file obtained with TreeAnontator. Next, select <code>location1</code> as latitude and <code>location2</code> as longitude. After that, you must load a geojson file with the baseline map you will use, for eg. South American bordes. Click <code>Generate JSON</code> and name the json file of output, including the extention .json.
+* <code>Rendering</code> tab. Load the json file generated in the previous tab. Render it in kml form, defining the name followed by the extension.
+* This will generate a .kml file in the folder which can then be opened using google earth.</p>
 </div>
 </div>

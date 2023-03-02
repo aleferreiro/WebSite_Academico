@@ -16,9 +16,9 @@ interests:
 - Prioridades geográficas para la conservación de la biodiversidad
 - Mamíferos, Aves y Herpetofauna
 organizations:
-- name: Instituto de Diversidad y Ecología Animal (IDEA)
-  url: https://www.idea.conicet.unc.edu.ar/
-role: Becario Doctoral
+- name: 
+  url: 
+role: Doctor en Ciencias Biológicas
 social:
 - icon: envelope
   icon_pack: fas
@@ -49,4 +49,4 @@ Soy un biólogo pronto a defender mi tesis para optar por el título de Doctor e
 
 Fuera de la academia, mis pasatiempos incluyen la fotografía, las actividades al aire libre y los deportes.
 
-{{< icon name="download" pack="fas" >}} Descarga mi {{< staticref "uploads/resume.pdf" "newtab" >}}CV{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Descarga mi {{< staticref "uploads/CV_resumido_es.pdf" "newtab" >}}CV{{< /staticref >}}.
