@@ -21,17 +21,17 @@ twitter: ''
 # Contact (edit or remove options as required)
 
 email: aleferreiro7@gmail.com
-phone: +54 351 5353800
+phone: 
 address:
-  street: Velez Sarfield 299
-  city: Córdoba
-  region: Córdoba
-  postcode: '5000'
-  country: Argentina
-  country_code: AR
+  street: 
+  city: 
+  region: 
+  postcode: 
+  country: 
+  country_code: 
 coordinates:
-  latitude: '-31.418621'
-  longitude: '-64.188034'
+  latitude: 
+  longitude: 
 contact_links:
   - icon: twitter
     icon_pack: fab
