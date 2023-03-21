@@ -16,9 +16,9 @@ interests:
 - Geographic conservation priorities
 - Mammals, Birds and herpetofauna.
 organizations:
-- name: Institute of Animal Diversity and Ecology (IDEA)
-  url: https://www.idea.conicet.unc.edu.ar/
-role: Ph.D. in Biological Sciences
+- name: National University of Santiago del Estero
+  url: https://fce.unse.edu.ar/
+role: Professor
 social:
 - icon: envelope
   icon_pack: fas

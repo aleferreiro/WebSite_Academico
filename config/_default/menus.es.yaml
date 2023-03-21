@@ -13,6 +13,9 @@ main:
   - name: Posteos
     url: '#posts'
     weight: 50
+  - name: Charlas
+    url: '#talks'
+    weight: 70
   - name: Contacto
     url: '#contact'
     weight: 100

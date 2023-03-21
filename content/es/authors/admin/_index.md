@@ -16,9 +16,9 @@ interests:
 - Prioridades geográficas para la conservación de la biodiversidad
 - Mamíferos, Aves y Herpetofauna
 organizations:
-- name: 
-  url: 
-role: Doctor en Ciencias Biológicas
+- name: Universidad Nacional de Santiago del Estero
+  url: https://fce.unse.edu.ar/
+role: Jefe de Trabajos Prácticos
 social:
 - icon: envelope
   icon_pack: fas
