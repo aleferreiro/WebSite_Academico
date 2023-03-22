@@ -45,7 +45,7 @@ superuser: true
 title: Alejandro Manuel Ferreiro
 ---
 
-Soy un biólogo pronto a defender mi tesis para optar por el título de Doctor en Ciencias Biológicas en la Universidad Nacional de Córdoba. Mis intereses de investigación incluyen la evolución y biogeografía de vertebrados terrestres Neotropicales, con el fin de aplicar este conocimiento para la conservación de la biodiversidad en América del Sur.
+Soy un biólogo, que defendió recientemente su tesis para optar por el título de Doctor en Ciencias Biológicas en la Universidad Nacional de Córdoba. Mis intereses de investigación incluyen la evolución y biogeografía de vertebrados terrestres Neotropicales, con el fin de aplicar este conocimiento para la conservación de la biodiversidad en América del Sur.
 
 Fuera de la academia, mis pasatiempos incluyen la fotografía, las actividades al aire libre y los deportes.
 
