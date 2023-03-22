@@ -19,4 +19,3 @@ design:
 advanced:
   css_class: fullscreen
 ---
-
