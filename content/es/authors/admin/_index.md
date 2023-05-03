@@ -16,9 +16,9 @@ interests:
 - Prioridades geográficas para la conservación de la biodiversidad
 - Mamíferos, Aves y Herpetofauna
 organizations:
-- name: Universidad Nacional de Santiago del Estero
-  url: https://fce.unse.edu.ar/
-role: Jefe de Trabajos Prácticos
+- name: Museo Argentino de Ciencias Naturales "Bernadino Rivadavia" (MACN)
+  url: https://www.macnconicet.gob.ar/
+role: Becario post-doctoral
 social:
 - icon: envelope
   icon_pack: fas

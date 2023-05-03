@@ -16,9 +16,9 @@ interests:
 - Geographic conservation priorities
 - Mammals, Birds and herpetofauna.
 organizations:
-- name: National University of Santiago del Estero
-  url: https://fce.unse.edu.ar/
-role: Professor
+- name: Argentinean Museum of Natural Sciences (MACN)
+  url: https://www.macnconicet.gob.ar/
+role: Post-doctoral fellow
 social:
 - icon: envelope
   icon_pack: fas
